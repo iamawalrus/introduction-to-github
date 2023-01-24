@@ -62,7 +62,10 @@ jobs:
           git config user.email github-actions@github.com
           git add index.html
           git commit --message="Update game over message"
-
+          
+          echo "Pull"
+          git pull
+          
           echo "Push"
           git push --set-upstream origin $BRANCH
 
